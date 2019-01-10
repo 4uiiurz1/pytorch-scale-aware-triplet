@@ -7,15 +7,15 @@ This repository contains code for **Scale-Aware Triplet Networks** based on [Lea
 
 ## Usage
 Args:
-- theta_glo (float, default: 1.15): global context in all triplets.
-- delta (int, default: 5): scale correction parameter.
-- gamma (float, default: 0.5): ratio of siamese and triplet.
-- scale_aware (bool, default: scale-aware sampling True):
+- theta_glo (float, default: 1.15): Global context in all triplets.
+- delta (int, default: 5): Scale correction parameter.
+- gamma (float, default: 0.5): Ratio of siamese and triplet.
+- scale_aware (bool, default: True): Scale-aware sampling.
 
 Input:
-- y_a: anchor samples.
-- y_b: positive samples. each positive samples have same class labels to the correspond anchor samples.
-- targets: class labels of y_a and y_b.
+- y_a: Anchor samples.
+- y_b: Positive samples. Each positive samples have same class labels to the correspond anchor samples.
+- targets: Class labels of y_a and y_b.
 
 ```python
 criterion = MixedContextLoss(theta_glo=1.15, delta=5, gamma=0.5, scale_aware=True)
