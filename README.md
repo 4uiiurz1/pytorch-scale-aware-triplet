@@ -46,7 +46,7 @@ python train.py --gamma 0.5 --scale-aware True
 ```
 
 ## Results
-### ScaledMNIST
+### MNIST
 ![mnist_siamese](mnist_siamese.png)
 ![mnist_mixed](mnist_mixed.png)
 ![mnist_triplet](mnist_triplet.png)
